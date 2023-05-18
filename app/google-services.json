@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "710494257770",
+    "project_id": "appfood-5c71e",
+    "storage_bucket": "appfood-5c71e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710494257770:android:5a8f4cc72d221b2d44c013",
+        "android_client_info": {
+          "package_name": "tl2.lecticiacuna.appfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710494257770-h92r7cmajp40bgbqks21ctcv6anv0lur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYi8b6QLn2ZbY9BzZFkVX1fjlheflPgsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710494257770-h92r7cmajp40bgbqks21ctcv6anv0lur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
