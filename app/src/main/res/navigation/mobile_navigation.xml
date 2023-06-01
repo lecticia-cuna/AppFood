@@ -22,4 +22,20 @@
         android:name="tl2.lecticiacuna.appfood.ui.categorias.CategoriaFragment"
         android:label="@string/categorias"
         tools:layout="@layout/fragment_categorias" />
+
+    <fragment
+        android:id="@+id/nav_pedidos"
+        android:name="tl2.lecticiacuna.appfood.ui.PedidosFragment"
+        android:label="@string/perfil"
+        tools:layout="@layout/fragment_pedidos"/>
+    <fragment
+        android:id="@+id/carrinhoFragment"
+        android:name="tl2.lecticiacuna.appfood.CarrinhoFragment"
+        android:label="fragment_carrinho"
+        tools:layout="@layout/fragment_carrinho" />
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="tl2.lecticiacuna.appfood.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
 </navigation>

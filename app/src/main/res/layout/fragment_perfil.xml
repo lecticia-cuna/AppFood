@@ -5,6 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.perfil.PerfilFragment">
+    
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/img_perfilH"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/perfilNome"
+        android:layout_width="0dp"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Nome Completo"
+        android:padding="13dp"
+        android:textColorHint="#595454"
+        android:textColor="#595454"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_perfilH"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/perfilEmail"
+        android:layout_width="0dp"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Email"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/perfilNome"
+        app:layout_constraintTop_toBottomOf="@+id/img_perfilH"
+        android:textColorHint="#595454"
+        android:textColor="#595454"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/perfilNrtelefone"
+        android:layout_width="0dp"
+        android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Numero de Telefone"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_perfilH"
+        android:textColorHint="#595454"
+        android:textColor="#595454"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/perfilEndereco"
+        android:layout_width="0dp"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Endereco"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_perfilH"
+        app:layout_constraintWidth_percent=".8"
+        android:textColorHint="#595454"
+        android:textColor="#595454" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/uptatePerfil"
+        android:padding="14dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Atualizar"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfilEndereco"
+        app:layout_constraintVertical_bias="0.3"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

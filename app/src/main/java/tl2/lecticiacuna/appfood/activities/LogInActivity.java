@@ -19,6 +19,7 @@ import tl2.lecticiacuna.appfood.databinding.ActivityLogInBinding;
 
 public class LogInActivity extends AppCompatActivity {
     private ActivityLogInBinding binding;
+    boolean isClicked = false;
 
     FirebaseAuth auth;
 
@@ -38,8 +39,13 @@ public class LogInActivity extends AppCompatActivity {
             }
         });
         binding.btnLogin.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                if(isClicked){
+                    return;
+                }
+
 
                 loginUser();
 
@@ -48,6 +54,7 @@ public class LogInActivity extends AppCompatActivity {
     }
 
     private void loginUser() {
+        isClicked=true;
 
         String userEmail=binding.emailLogin.getText().toString();
         String userPass=binding.passLogin.getText().toString();
@@ -74,11 +81,13 @@ public class LogInActivity extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+
                         if (task.isSuccessful()){
                             Toast.makeText(LogInActivity.this, "Login efectuado com Sucesso!!!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(LogInActivity.this, MainActivity.class));
                             finish();
                         }else{
+                            isClicked=false;
                             Toast.makeText(LogInActivity.this, "ERROR: Email ou senha incorretos"+task.isSuccessful(), Toast.LENGTH_SHORT).show();
                         }
                     }
